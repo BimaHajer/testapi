@@ -8,6 +8,7 @@ import { FormationModule } from './formation/formation.module';
 import { FormaterModule } from './formater/formater.module';
 import { CenterModule } from './center/center.module';
 import { User1Module } from './user1/user1.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import { User1Module } from './user1/user1.module';
   
         }),
         ConfigModule.forRoot(),
-        CustomerModule, FormationModule, FormaterModule, CenterModule, User1Module],
+        CustomerModule, FormationModule, FormaterModule, CenterModule, User1Module, AuthModule],
   controllers: [AppController,],
   providers: [AppService, ],
 })
